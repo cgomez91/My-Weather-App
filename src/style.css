@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f1fe;
+  background-color: #e3e3e3;
   font-family: .merriweather-light {
     font-family: "Merriweather", serif;
     font-weight: 300;
@@ -57,7 +57,7 @@ a {
   background: #ffffff;
   max-width: 600px;
   margin: 45px auto;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  box-shadow: 0 20px 200px rgba(985, 950, 1, 0.6);
   border-radius: 16px;
   padding: 30px;
 }
@@ -67,26 +67,45 @@ header {
   padding: 0 0 30px 0;
 }
 .search-form-input {
-  background-color: #f5f1fe;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 200, 124) 0%,
+    rgb(252, 251, 121) 90%
+  );
   border: none;
   border-radius: 6px;
-  width: 80%;
+  width: 78%;
   font-size: 16px;
   padding: 15px 20px;
-  font-family: "Playfair Display", serif;
+  font-family: "Merriweather", serif;
+}
+
+.search-form-input:hover {
+  cursor: pointer;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 200, 124) 0%,
+    rgb(252, 251, 121) 90%
+  );
 }
 
 .search-form-button {
-  background: #885df1;
+  background: #407088;
   padding: 15px 30px;
   border: none;
+  width: 20%;
   font-size: 16px;
-  font-family: "Playfair Display", serif;
-  margin-left: 5px;
+  font-family: "Merriweather", serif;
+  margin-left: 6px;
   border-radius: 6px;
-  color: white;
+  color: #e9dac1;
 }
 
+.search-form-button:hover {
+  cursor: pointer;
+  background: #f65282;
+  transition: all 150ms ease-in-out;
+}
 main {
   padding: 30px 0;
 }
@@ -98,12 +117,12 @@ main {
 
 .weather-app-city {
   margin: 0;
-  font-size: 38px;
+  font-size: 45px;
   line-height: 48px;
 }
 
 .weather-app-details {
-  font-size: 16px;
+  font-size: 17px;
   color: rgba(39, 33, 66, 0.4);
   line-height: 24px;
   font-weight: 500;
@@ -137,6 +156,6 @@ footer {
   border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.6);
 }
